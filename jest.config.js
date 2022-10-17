@@ -1,5 +1,6 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
+  coverageDirectory: 'coverage',
   moduleFileExtensions: ['js', 'ts', 'tsx'],
   moduleNameMapper: {
     '\\.css$': 'identity-obj-proxy',
