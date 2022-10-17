@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react';
 
-type TabsProps = {
+export type TabsProps = {
   children: ReactElement[];
 };
 

@@ -9,7 +9,7 @@ export const Greeter = ({ name, formal, personalMessage }: GreeterProps) => {
   const greetingPunctuation = formal ? '!' : '?';
 
   if (!name) {
-    return <div>Before i greet you, I need to know your name</div>;
+    return <div>Before I greet you, I need to know your name 😎</div>;
   }
 
   return (

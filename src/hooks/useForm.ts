@@ -1,12 +1,12 @@
 import { ChangeEventHandler, FormEventHandler, useState } from 'react';
 import { isObjectEmpty } from '../utils';
 
-interface UseFormOptions<T> {
+export type UseFormProps<T> = {
   initialValues: T;
   validate?: (values: T) => Partial<T>;
-}
+};
 
-export const useForm = <T>({ initialValues, validate }: UseFormOptions<T>) => {
+export const useForm = <T>({ initialValues, validate }: UseFormProps<T>) => {
   const [values, setValues] = useState(initialValues);
   const [touched, setTouched] = useState<Record<string, boolean | undefined>>(
     {},

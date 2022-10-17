@@ -17,7 +17,7 @@ function App() {
             personalMessage="Good luck mate!"
           />
         </div>
-        <div title="2. Poll">
+        <div title="2. Form">
           <Poll />
         </div>
         <div title="3. User events">
