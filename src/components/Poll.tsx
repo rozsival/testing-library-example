@@ -15,7 +15,7 @@ export const Poll = () => {
       <h4 data-testid="title">Poll</h4>
       {isSubmitted ? (
         <h5 data-testid="acknowledgement">
-          Thanks you {fullName} for great {yearsOfService} years of service.
+          Thank you {fullName} for great {yearsOfService} years of service.
         </h5>
       ) : (
         <form className="form">

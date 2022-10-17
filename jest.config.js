@@ -1,5 +1,6 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
+  collectCoverage: true,
   coverageDirectory: 'coverage',
   moduleFileExtensions: ['js', 'ts', 'tsx'],
   moduleNameMapper: {
@@ -7,6 +8,6 @@ module.exports = {
   },
   preset: 'ts-jest',
   setupFilesAfterEnv: ['./src/setupTests.ts'],
-  testEnvironment: 'node',
+  testEnvironment: 'jest-environment-jsdom',
   verbose: true,
 };
